@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="main">
+
+<h1>Pokemon pack</h1>
+
+<p></p>
+<img src="images/pack.png" width="150">
+<p></p>
+
+<button type="button" class="collapsible">Open the pack</button>
+<div class="content" style="display: none;">
+<p></p>
+  <audio id="punchSound">
+    <source src="audio/balatro.mp3" type="audio/mpeg">
+  </audio>
+  <img src="images/kimbo.png" width="250">
+ <p></p>
+  <a href="end.html">Next</a>
+<p></p>
+</div>
+
+<script>
+  document.querySelector(".collapsible").addEventListener("click", function() {
+    const content = document.querySelector(".content");
+    const audio = document.getElementById("punchSound");
+
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+      audio.currentTime = 0;
+      audio.play();
+    }
+  });
+</script>
+
+</body>
+</html>
