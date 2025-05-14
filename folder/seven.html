@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biggest Opp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="main">
+
+    <h1>Biggest Opp</h1>
+
+    <img src="images/look.jpg" alt="Look" />
+
+    <audio id="punchSound">
+      <source src="audio/punch.mp3" type="audio/mpeg">
+    </audio>
+
+    <button onclick="punch()">Punch the kid</button>
+    <p id="counter">Punched: 0</p>
+
+    <a href="eight.html">Next</a>
+
+  </div>
+
+  <script>
+    let punchCount = 0;
+
+    function punch() {
+      punchCount++;
+      document.getElementById("counter").textContent = "Punched: " + punchCount;
+
+      // Randomly choose between two punch sounds
+      const sounds = ["audio/punch.mp3", "audio/stevepunch.mp3"];
+      const randomSound = sounds[Math.floor(Math.random() * sounds.length)];
+
+      const audio = new Audio(randomSound);
+      audio.play();
+    }
+  </script>
+
+</body>
+</html>

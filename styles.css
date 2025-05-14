@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#main {
+    background-color: powderblue;
+    margin: auto;
+    text-align: center;
+    max-width: 600px;
+    padding: 1em;
+}
+
+/* Responsive image */
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+}
+
+/* Responsive audio player */
+audio {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 1em auto;
+}
+
+/* Optional: improve link appearance */
+a {
+    display: inline-block;
+    margin-top: 1.5em;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #0044cc;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: white;
+    color: black; /* Normal text color */
+    border: none; /* No border */
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+    button:hover {
+        background-color: #f0f0f0; /* Light grey background on hover */
+    }
